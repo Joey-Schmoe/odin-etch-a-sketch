@@ -1,0 +1,12 @@
+#grid-container { 
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: repeat(8, auto);
+
+    height: 400px;
+    width: 400px;
+}
+
+.cell {
+    border: 1px solid red;
+}
