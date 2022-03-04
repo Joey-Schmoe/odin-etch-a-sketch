@@ -1,7 +1,8 @@
 body {
     margin: 0;
     display: flex;
-    justify-items: flex-start;
+    justify-content: center;
+    align-items: flex-start;
     padding: 24px;
 }
 
@@ -9,27 +10,58 @@ body {
     display: grid;
     grid-template-columns: repeat(8, auto);
     grid-template-rows: repeat(8, auto);
-
-    height: 400px;
-    width: 400px;
+    border: 2px solid black;
+    width: 600px;
+    height: 600px;
 }
 
 #grid-options {
-    margin: 16px 16px 16px auto;
+    margin-top: 24px;
+    margin-right: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
+    border: 2px solid black;
+    border-radius: 5px;
+    padding-bottom: 16px;
+}
+
+#grid-options > h3 {
+    width: 100%;
+    text-align: center;
 }
 
 #grid-options > div {
     width: 60%;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 16px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.generation-button {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#clear-button {
+    width: 50%;
+    height: 48px;
+    margin-top: 16px;
+
+    font-size: 18px;
 }
 
 .cell {
-    border: 1px solid red;
+    background-color: black;
+    opacity: 0;
+    min-width: 4px;
+    min-height: 4px;
 }
