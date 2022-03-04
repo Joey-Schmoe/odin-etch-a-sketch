@@ -1,3 +1,10 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-items: flex-start;
+    padding: 24px;
+}
+
 #grid-container { 
     display: grid;
     grid-template-columns: repeat(8, auto);
@@ -5,6 +12,13 @@
 
     height: 400px;
     width: 400px;
+}
+
+#grid-options {
+    margin: 16px 16px 16px auto;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .cell {
