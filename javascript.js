@@ -3,7 +3,17 @@
 
 const gridContainer = document.querySelector('#grid-container');
 
-function createGrid(rows, cols, size) {
+const rowsInput = document.querySelector('#rows-input');
+const colsInput = document.querySelector('#cols-input');
+const buttonInput = document.querySelector('#button-input');
+
+buttonInput.addEventListener('click', createGrid);
+
+function createGrid() {
+    //Get inpuut
+    const rows = rowsInput.value;
+    const cols = rowsInput.value;
+
     //Ensure input is valid
     if (rows <= 0 || cols <= 0) {
         console.log('ERROR: x or y argument for createGrid function has value of 0 or less');
@@ -17,4 +27,4 @@ function createGrid(rows, cols, size) {
     }
 }
 
-createGrid(8, 8, 100);
+createGrid();

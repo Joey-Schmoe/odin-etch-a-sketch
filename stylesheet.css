@@ -18,7 +18,16 @@ body {
     margin: 16px 16px 16px auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+#grid-options > div {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 16px;
 }
 
 .cell {
